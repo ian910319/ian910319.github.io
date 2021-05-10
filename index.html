@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Chiang Cheng-En's Self Introduction</title>
+	<style>
+	  html {
+	  background-color: #000000;
+      }
+	  img {
+	  display: block;
+	  margin: 0 auto;
+	  }
+	  p,h1 {
+      color: White;
+      }
+	  a{
+	  color:#00FFFF;
+	  }
+	  a:hover{
+	  color: #FF0000;
+	  }
+	</style>
+	<link rel="icon" href="seal.jpg">
+  </head>
+  <body onload="showTime()">
+	<h1>Hello everybody, my name is Chiang Cheng-En, or you can call me Ian Chiang.</h1>
+	<img src="profile.jpg"
+	  width="300"
+      height="300">
+    <h1>My High School:</h1>
+	<p><font size="6"><a href=https://tcfsh.tc.edu.tw/>TCFSH</a></font></p>
+	<h1>The department I major in:</h1>
+	<p><font size="6"><a href=https://web.ee.ntu.edu.tw/>NTUEE</a></font></p>
+	<h1>My Hobbies:</h1>
+	<p>
+	<font size="6">
+	1.Watching MLB and NBA.
+	<a href=https://www.mlb.com/player/shohei-ohtani-660271>Shohei Ohtani</a> and
+	<a href=https://www.nba.com/player/1629029/luka_don>Luka Doncic</a>
+	 are my favorite players now.<br></br>
+	2.Reading Visual Novels.
+	<a href=http://key.visualarts.gr.jp/summer/>Summer Pocket</a> is one of the visual novels I'm reading recently.<br></br>
+	3.Listening to Music,especially J-pop.<a href=https://www.yoasobi-music.jp/>Yoasobi</a> is a Japanese music duo that I like a lot.<br></br>
+	  My favorite songs of theirs are <a href=https://www.youtube.com/watch?v=kzdJkT4kp-A>Harujion</a> and 
+	  <a href=https://www.youtube.com/watch?v=dy90tA3TT1c>Kaibutsu</a>.
+	  <br></br><br></br>
+	  <b><s>比爾是顆水餃</s> 比爾是科學家</b><br></br>
+	  <audio src="Bill.mp3" controls autoplay loop></audio><br></br>
+	Date/Time:<br></br><span id="datetime"></span>
+	</font>
+	<p>
+	
+	<script>
+	function showTime(){
+	var dt = new Date();
+	document.getElementById("datetime").innerHTML = (dt.getMonth()+1) +"-"+ 
+	(("0"+dt.getDate()).slice(-2)) +"-"+ (dt.getFullYear()) +" "+
+	(("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2)) +":"+ (("0"+dt.getSeconds()).slice(-2));
+	}
+	
+	setInterval(showTime, 1000);
+	</script>
+  </body>
+</html>
